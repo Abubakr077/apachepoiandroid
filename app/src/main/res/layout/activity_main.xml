@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_100"
+              android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar_main"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="15dp"
+                            android:drawableStart="@drawable/icon_organization"
+                            android:gravity="center"
+                            android:paddingEnd="15dp"
+                            android:text="COMPANY"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            android:paddingStart="15dp"/>
+
+                        <Spinner
+                            android:id="@+id/snpr_company"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <EditText
+                            android:id="@+id/txt_bicycle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:hint="BICYCLE SN"
+                            android:textColorHint="@color/grey_800"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="15dp"
+                        android:drawableStart="@drawable/icon_officer"
+                        android:gravity="center"
+                        android:paddingEnd="15dp"
+                        android:text="RN OFFICER"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:paddingStart="15dp"/>
+
+                    <Spinner
+                        android:id="@+id/spnr_rn_officer"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1"
+                    android:hint="LOCATION"
+                    android:textColorHint="@color/grey_800"
+                    android:drawableLeft="@drawable/icon_location"
+                    android:drawablePadding="15sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/txt_rn_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:hint="RN DATE"
+                        android:textColorHint="@color/grey_800"
+                        android:drawableLeft="@drawable/icon_date"
+                        android:drawablePadding="15sp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:onClick="rnDatePicker"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/txt_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:hint="RN TIME"
+                        android:textColorHint="@color/grey_800"
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="15sp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:onClick="rnTimerPicker"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/txt_offence_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:hint="OFFENCE DATE"
+                        android:textColorHint="@color/grey_800"
+                        android:drawableLeft="@drawable/icon_date"
+                        android:drawablePadding="15sp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:onClick="offenceDatePicker"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/txt_offence_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete"
+                        android:maxLines="1"
+                        android:hint="OFFENCE TIME"
+                        android:textColorHint="@color/grey_800"
+                        android:drawableLeft="@drawable/icon_time"
+                        android:drawablePadding="15sp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:onClick="offenceTimePicker"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadow_profile"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="15dp"
+                        android:drawableStart="@drawable/icon_officer_2"
+                        android:gravity="center"
+                        android:paddingEnd="15dp"
+                        android:text="ROO OFFICER"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:paddingStart="15dp"/>
+
+                    <Spinner
+                        android:id="@+id/roo_snpr"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_border"
+                    android:drawableEnd="@drawable/icon_return"
+                    android:paddingEnd="5dp"
+                    android:text="RETRIEVE FILE"
+                    android:onClick="deleteReport"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_border"
+                    android:drawableEnd="@drawable/icon_forward"
+                    android:paddingEnd="5dp"
+                    android:text="NEXT"
+                    android:onClick="generalPhotos"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

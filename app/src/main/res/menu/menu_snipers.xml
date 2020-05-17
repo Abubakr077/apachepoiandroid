@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/handle_snipers"
+        android:icon="@drawable/icon_box"
+        android:title="Handle Combos"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText">
+    </item>
+
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/handle_old_doc"
+        android:icon="@drawable/icon_return"
+        android:title="Retrieve Doc"
+        android:visible="true"
+        android:iconTint="@android:color/white">
+    </item>
+
+</menu>

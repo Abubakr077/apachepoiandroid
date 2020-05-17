@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BSO BLITZER</string>
+    <string name="generalphotosstring">Upload photos showing the general views of the obstruction or inconvenience caused</string>
+    <string name="bicyclestring">Upload photos showing the bicycles being moved to ease the obstruction or inconvenience caused</string>
+    <string name="generatereportstring">Upload photos showing the situation when returned 4 hours later</string>
+    <string name="title_storage_permission">Storage Access Required</string>
+    <string name="text_storage_permission">Storage access is required to proceed</string>
+</resources>

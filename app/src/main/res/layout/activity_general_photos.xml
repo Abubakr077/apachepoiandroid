@@ -1,0 +1,373 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey_100"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/title_user_name"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_name"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:id="@+id/title_user_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_user_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/generalphotosstring"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <Button
+                    android:id="@+id/generalPhotos1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:color/white"
+                    android:drawableRight="@drawable/icon_browse"
+                    android:hint="PICTURE NUMBER 1"
+                    android:padding="18dp"
+                    android:textColor="@color/grey_800"/>
+                <Button
+                    android:id="@+id/generalPhotosUnSelect1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/grey_200"
+                    android:padding="18dp"
+                    android:textColor="@color/grey_800"
+                    android:hint="Un Select"
+                    android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/generalPhotos2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:drawableRight="@drawable/icon_browse"
+                        android:hint="PICTURE NUMBER 2"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"/>
+                    <Button
+                        android:id="@+id/generalPhotosUnSelect2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"
+                        android:hint="Un Select"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/generalPhotos3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:drawableRight="@drawable/icon_browse"
+                        android:hint="PICTURE NUMBER 3"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"/>
+                    <Button
+                        android:id="@+id/generalPhotosUnSelect3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"
+                        android:hint="Un Select"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/generalPhotos4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:drawableRight="@drawable/icon_browse"
+                        android:hint="PICTURE NUMBER 4"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"/>
+                    <Button
+                        android:id="@+id/generalPhotosUnSelect4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"
+                        android:hint="Un Select"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/generalPhotos5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:drawableRight="@drawable/icon_browse"
+                        android:hint="PICTURE NUMBER 5"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"/>
+                    <Button
+                        android:id="@+id/generalPhotosUnSelect5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"
+                        android:hint="Un Select"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/generalPhotos6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@android:color/white"
+                        android:drawableRight="@drawable/icon_browse"
+                        android:hint="PICTURE NUMBER 6"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"/>
+                    <Button
+                        android:id="@+id/generalPhotosUnSelect6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/grey_200"
+                        android:padding="18dp"
+                        android:textColor="@color/grey_800"
+                        android:hint="Un Select"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_generalPhotos6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_border"
+                    android:drawableStart="@drawable/icon_back"
+                    android:onClick="goBack"
+                    android:paddingStart="5dp"
+                    android:text="Back"
+                    />
+
+                <Button
+                    android:id="@+id/btn_goTobicycleActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_border"
+                    android:drawableEnd="@drawable/icon_forward"
+                    android:onClick="goTobicycleActivity"
+                    android:paddingEnd="5dp"
+                    android:text="NEXT"/>
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressBar_general"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
