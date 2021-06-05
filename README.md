@@ -8,6 +8,9 @@ open this document in microsoft word
 Document formating : 
 https://drive.google.com/open?id=1tebZ61VSNQxpjMr3FVBStL_L-6Ld4eVh
 
+Hire me: 
+
+https://www.fiverr.com/share/Qdy0zw
 
 Now you can read the already created document using retrieve file option in the app.
 Enjoy!
